@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             pnlCadastroUsuario = new Panel();
-            lblCadastroUsuario = new Label();
-            txtNome = new TextBox();
-            txtCpf = new TextBox();
-            txtSenha = new TextBox();
-            cmb = new ComboBox();
-            btnCadastrar = new Button();
-            lblNome = new Label();
-            lblCpf = new Label();
-            lblTipoUsuario = new Label();
             lblSenha = new Label();
+            lblTipoUsuario = new Label();
+            lblCpf = new Label();
+            lblNome = new Label();
+            cmb = new ComboBox();
+            txtSenha = new TextBox();
+            txtCpf = new TextBox();
+            txtNome = new TextBox();
+            lblCadastroUsuario = new Label();
+            btnCadastrar = new Button();
             pnlCadastroUsuario.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,77 +57,15 @@
             pnlCadastroUsuario.Size = new Size(509, 402);
             pnlCadastroUsuario.TabIndex = 0;
             // 
-            // lblCadastroUsuario
+            // lblSenha
             // 
-            lblCadastroUsuario.AutoSize = true;
-            lblCadastroUsuario.Font = new Font("Berlin Sans FB", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCadastroUsuario.Location = new Point(496, 38);
-            lblCadastroUsuario.Name = "lblCadastroUsuario";
-            lblCadastroUsuario.Size = new Size(213, 26);
-            lblCadastroUsuario.TabIndex = 1;
-            lblCadastroUsuario.Text = "Cadastro de Usuario";
-            // 
-            // txtNome
-            // 
-            txtNome.Location = new Point(131, 69);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(226, 23);
-            txtNome.TabIndex = 0;
-            txtNome.TextChanged += this.txtNome_TextChanged;
-            // 
-            // txtCpf
-            // 
-            txtCpf.Location = new Point(131, 147);
-            txtCpf.Name = "txtCpf";
-            txtCpf.Size = new Size(226, 23);
-            txtCpf.TabIndex = 1;
-            // 
-            // txtSenha
-            // 
-            txtSenha.Location = new Point(131, 320);
-            txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(226, 23);
-            txtSenha.TabIndex = 2;
-            // 
-            // cmb
-            // 
-            cmb.FormattingEnabled = true;
-            cmb.Items.AddRange(new object[] { "Adiministrador", "Funcionário", "Visitante" });
-            cmb.Location = new Point(131, 230);
-            cmb.Name = "cmb";
-            cmb.Size = new Size(226, 23);
-            cmb.TabIndex = 3;
-            // 
-            // btnCadastrar
-            // 
-            btnCadastrar.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCadastrar.Location = new Point(352, 523);
-            btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(165, 50);
-            btnCadastrar.TabIndex = 2;
-            btnCadastrar.Text = "Cadastrar";
-            btnCadastrar.UseVisualStyleBackColor = true;
-            btnCadastrar.Click += this.btnCadastrar_Click;
-            // 
-            // lblNome
-            // 
-            lblNome.AutoSize = true;
-            lblNome.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNome.Location = new Point(131, 51);
-            lblNome.Name = "lblNome";
-            lblNome.Size = new Size(47, 17);
-            lblNome.TabIndex = 4;
-            lblNome.Text = "Nome";
-            // 
-            // lblCpf
-            // 
-            lblCpf.AutoSize = true;
-            lblCpf.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCpf.Location = new Point(131, 127);
-            lblCpf.Name = "lblCpf";
-            lblCpf.Size = new Size(34, 17);
-            lblCpf.TabIndex = 4;
-            lblCpf.Text = "CPF";
+            lblSenha.AutoSize = true;
+            lblSenha.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSenha.Location = new Point(131, 300);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(46, 17);
+            lblSenha.TabIndex = 4;
+            lblSenha.Text = "Senha";
             // 
             // lblTipoUsuario
             // 
@@ -139,15 +77,76 @@
             lblTipoUsuario.TabIndex = 4;
             lblTipoUsuario.Text = "Tipo Usuario";
             // 
-            // lblSenha
+            // lblCpf
             // 
-            lblSenha.AutoSize = true;
-            lblSenha.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSenha.Location = new Point(131, 300);
-            lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(46, 17);
-            lblSenha.TabIndex = 4;
-            lblSenha.Text = "Senha";
+            lblCpf.AutoSize = true;
+            lblCpf.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCpf.Location = new Point(131, 127);
+            lblCpf.Name = "lblCpf";
+            lblCpf.Size = new Size(34, 17);
+            lblCpf.TabIndex = 4;
+            lblCpf.Text = "CPF";
+            // 
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNome.Location = new Point(131, 51);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(47, 17);
+            lblNome.TabIndex = 4;
+            lblNome.Text = "Nome";
+            // 
+            // cmb
+            // 
+            cmb.FormattingEnabled = true;
+            cmb.Items.AddRange(new object[] { "Adiministrador", "Funcionário", "Visitante" });
+            cmb.Location = new Point(131, 230);
+            cmb.Name = "cmb";
+            cmb.Size = new Size(226, 23);
+            cmb.TabIndex = 3;
+            // 
+            // txtSenha
+            // 
+            txtSenha.Location = new Point(131, 320);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(226, 23);
+            txtSenha.TabIndex = 2;
+            // 
+            // txtCpf
+            // 
+            txtCpf.Location = new Point(131, 147);
+            txtCpf.Name = "txtCpf";
+            txtCpf.Size = new Size(226, 23);
+            txtCpf.TabIndex = 1;
+            // 
+            // txtNome
+            // 
+            txtNome.Location = new Point(131, 69);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(226, 23);
+            txtNome.TabIndex = 0;
+            // 
+            // lblCadastroUsuario
+            // 
+            lblCadastroUsuario.AutoSize = true;
+            lblCadastroUsuario.Font = new Font("Berlin Sans FB", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCadastroUsuario.Location = new Point(496, 38);
+            lblCadastroUsuario.Name = "lblCadastroUsuario";
+            lblCadastroUsuario.Size = new Size(213, 26);
+            lblCadastroUsuario.TabIndex = 1;
+            lblCadastroUsuario.Text = "Cadastro de Usuario";
+            // 
+            // btnCadastrar
+            // 
+            btnCadastrar.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCadastrar.Location = new Point(352, 523);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(165, 50);
+            btnCadastrar.TabIndex = 2;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // CadastroUsuario
             // 
@@ -160,7 +159,6 @@
             Name = "CadastroUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += this.CadastroUsuario_Load;
             pnlCadastroUsuario.ResumeLayout(false);
             pnlCadastroUsuario.PerformLayout();
             ResumeLayout(false);

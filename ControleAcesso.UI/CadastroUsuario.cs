@@ -6,5 +6,10 @@ namespace ControleAcesso.UI
         {
             InitializeComponent();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
