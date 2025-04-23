@@ -1,3 +1,5 @@
+using ControleAcesso.Core;
+
 namespace ControleAcesso.UI
 {
     public partial class CadastroUsuario : Form
@@ -9,6 +11,22 @@ namespace ControleAcesso.UI
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            Usuario usuario = new(txtNome.Text, txtCpf.Text, cmb.SelectedIndex + 1, txtSenha.Text);
+            usuario.Cadastrar();
+
+            MessageBox.Show($"{usuario.Nome} cadastrado com sucesso!");
+        }
+
+        private void chkExibirSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkExibirSenha.Checked)
+            {
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtSenha.UseSystemPasswordChar = true;
+            }
 
         }
     }

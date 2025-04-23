@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControleAcesso.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43700d072ff0afea0365ab1b3bc302d877532985")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd32e379a565dc00083692aaad22da122a51a755")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControleAcesso.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControleAcesso.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

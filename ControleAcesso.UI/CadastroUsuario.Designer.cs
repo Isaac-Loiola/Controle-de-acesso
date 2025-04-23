@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pnlCadastroUsuario = new Panel();
+            chkExibirSenha = new CheckBox();
             lblSenha = new Label();
             lblTipoUsuario = new Label();
             lblCpf = new Label();
@@ -44,6 +45,7 @@
             // 
             // pnlCadastroUsuario
             // 
+            pnlCadastroUsuario.Controls.Add(chkExibirSenha);
             pnlCadastroUsuario.Controls.Add(lblSenha);
             pnlCadastroUsuario.Controls.Add(lblTipoUsuario);
             pnlCadastroUsuario.Controls.Add(lblCpf);
@@ -56,6 +58,16 @@
             pnlCadastroUsuario.Name = "pnlCadastroUsuario";
             pnlCadastroUsuario.Size = new Size(509, 402);
             pnlCadastroUsuario.TabIndex = 0;
+            // 
+            // chkExibirSenha
+            // 
+            chkExibirSenha.AutoSize = true;
+            chkExibirSenha.Location = new Point(334, 326);
+            chkExibirSenha.Name = "chkExibirSenha";
+            chkExibirSenha.Size = new Size(15, 14);
+            chkExibirSenha.TabIndex = 5;
+            chkExibirSenha.UseVisualStyleBackColor = true;
+            chkExibirSenha.CheckedChanged += chkExibirSenha_CheckedChanged;
             // 
             // lblSenha
             // 
@@ -112,6 +124,7 @@
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(226, 23);
             txtSenha.TabIndex = 2;
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // txtCpf
             // 
@@ -178,5 +191,6 @@
         private Label lblTipoUsuario;
         private Label lblCpf;
         private Label lblNome;
+        private CheckBox chkExibirSenha;
     }
 }

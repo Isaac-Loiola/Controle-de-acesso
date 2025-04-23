@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace ControleAcesso.Core
 {
-    class Usuario
+   public class Usuario
     {
 
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Cpf { get; set; }
-        public string TipoUsuario { get; set; }
+        public int TipoUsuario { get; set; }
         public string Senha { get; set; }
 
         public Usuario()
         {
 
         }
-        public Usuario(int id, string nome, string cpf, string tipoUsuario, string senha)
+        public Usuario(int id, string nome, string cpf, int tipoUsuario, string senha)
         {
             Id = id;
             Nome = nome;
@@ -28,7 +28,7 @@ namespace ControleAcesso.Core
             TipoUsuario = tipoUsuario;
             Senha = senha;
         }
-        public Usuario(string nome, string cpf, string tipoUsuario, string senha)
+        public Usuario(string nome, string cpf, int tipoUsuario, string senha)
         {
             Nome = nome;
             Cpf = cpf;
@@ -43,11 +43,11 @@ namespace ControleAcesso.Core
         public void Cadastrar()
         {
             var cmd = Banco.Abrir();
-            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandType = CommandType.Text;
             cmd.CommandText = $"insert into usuarios(nome, cpf, tipousuario, senha) " +
-                              $"values ('{Nome}', '{Cpf}', {TipoUsuario}, '{Senha}')";
-            cmd.ExecuteReader();
-            cmd.CommandText = "select last_insert_id()";
+                              $"values ('{Nome}', '{Cpf}', {TipoUsuario}, md5('{Senha}'))";
+            cmd.ExecuteNonQuery();
+            cmd.CommandText = "select id from usuarios order by id desc limit 1";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
         }
 
