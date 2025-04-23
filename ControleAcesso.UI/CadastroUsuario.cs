@@ -1,8 +1,8 @@
 namespace ControleAcesso.UI
 {
-    public partial class Form1 : Form
+    public partial class CadastroUsuario : Form
     {
-        public Form1()
+        public CadastroUsuario()
         {
             InitializeComponent();
         }
