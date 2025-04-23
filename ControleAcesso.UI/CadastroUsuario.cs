@@ -29,5 +29,10 @@ namespace ControleAcesso.UI
             }
 
         }
+
+        private void CadastroUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

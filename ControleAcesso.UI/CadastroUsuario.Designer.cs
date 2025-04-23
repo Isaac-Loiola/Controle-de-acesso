@@ -172,6 +172,7 @@
             Name = "CadastroUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += CadastroUsuario_Load;
             pnlCadastroUsuario.ResumeLayout(false);
             pnlCadastroUsuario.PerformLayout();
             ResumeLayout(false);

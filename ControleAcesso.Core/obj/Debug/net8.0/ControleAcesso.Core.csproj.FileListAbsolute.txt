@@ -11,3 +11,16 @@ C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.Core\obj\Debug
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.Core\obj\Debug\net8.0\refint\ControleAcesso.Core.dll
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.pdb
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.Core\obj\Debug\net8.0\ref\ControleAcesso.Core.dll
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\bin\Debug\net8.0\ControleAcesso.Core.deps.json
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\bin\Debug\net8.0\ControleAcesso.Core.dll
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\bin\Debug\net8.0\ControleAcesso.Core.pdb
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.csproj.AssemblyReference.cache
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.AssemblyInfoInputs.cache
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.AssemblyInfo.cs
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.csproj.CoreCompileInputs.cache
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.sourcelink.json
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.dll
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\refint\ControleAcesso.Core.dll
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ControleAcesso.Core.pdb
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.Core\obj\Debug\net8.0\ref\ControleAcesso.Core.dll

@@ -45,7 +45,9 @@ namespace ControleAcesso.Core
             var cmd = Banco.Abrir();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = $"insert into usuarios(nome, cpf, tipousuario, senha) " +
-                              $"values ('{Nome}', '{Cpf}', {TipoUsuario}, md5('{Senha}'))";
+                              //$"values ('{Nome}', '{Cpf}', {TipoUsuario}, md5('{Senha}'))";
+                              $"values ('{Nome}', '{Cpf}', {TipoUsuario}, '{Senha}')";
+
             cmd.ExecuteNonQuery();
             cmd.CommandText = "select id from usuarios order by id desc limit 1";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
