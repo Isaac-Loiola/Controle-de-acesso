@@ -73,7 +73,7 @@
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSenha.Location = new Point(131, 300);
+            lblSenha.Location = new Point(142, 300);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(46, 17);
             lblSenha.TabIndex = 4;
@@ -83,7 +83,7 @@
             // 
             lblTipoUsuario.AutoSize = true;
             lblTipoUsuario.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTipoUsuario.Location = new Point(131, 210);
+            lblTipoUsuario.Location = new Point(142, 210);
             lblTipoUsuario.Name = "lblTipoUsuario";
             lblTipoUsuario.Size = new Size(85, 17);
             lblTipoUsuario.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             lblCpf.AutoSize = true;
             lblCpf.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCpf.Location = new Point(131, 127);
+            lblCpf.Location = new Point(142, 127);
             lblCpf.Name = "lblCpf";
             lblCpf.Size = new Size(34, 17);
             lblCpf.TabIndex = 4;
@@ -103,7 +103,7 @@
             // 
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNome.Location = new Point(131, 51);
+            lblNome.Location = new Point(142, 51);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(47, 17);
             lblNome.TabIndex = 4;
@@ -113,14 +113,14 @@
             // 
             cmb.FormattingEnabled = true;
             cmb.Items.AddRange(new object[] { "Adiministrador", "Funcionário", "Visitante" });
-            cmb.Location = new Point(131, 230);
+            cmb.Location = new Point(142, 230);
             cmb.Name = "cmb";
             cmb.Size = new Size(226, 23);
             cmb.TabIndex = 3;
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(131, 320);
+            txtSenha.Location = new Point(142, 320);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(226, 23);
             txtSenha.TabIndex = 2;
@@ -128,14 +128,14 @@
             // 
             // txtCpf
             // 
-            txtCpf.Location = new Point(131, 147);
+            txtCpf.Location = new Point(142, 147);
             txtCpf.Name = "txtCpf";
             txtCpf.Size = new Size(226, 23);
             txtCpf.TabIndex = 1;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(131, 69);
+            txtNome.Location = new Point(142, 69);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(226, 23);
             txtNome.TabIndex = 0;
