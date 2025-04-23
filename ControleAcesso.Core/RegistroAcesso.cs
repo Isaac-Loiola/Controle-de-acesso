@@ -26,7 +26,7 @@ namespace ControleAcesso.Core
 
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = "select select id from registro order by id desc limit 1";
-            Id = Convert.ToInt32(cmd.ExecuteScalar());
+           Id = Convert.ToInt32(cmd.ExecuteScalar());
 
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = "select data_hora from registros order by id desc limit 1";
