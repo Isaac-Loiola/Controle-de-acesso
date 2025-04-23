@@ -73,6 +73,7 @@
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(226, 23);
             txtNome.TabIndex = 0;
+            txtNome.TextChanged += this.txtNome_TextChanged;
             // 
             // txtCpf
             // 
@@ -106,6 +107,7 @@
             btnCadastrar.TabIndex = 2;
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += this.btnCadastrar_Click;
             // 
             // lblNome
             // 
@@ -158,6 +160,7 @@
             Name = "CadastroUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += this.CadastroUsuario_Load;
             pnlCadastroUsuario.ResumeLayout(false);
             pnlCadastroUsuario.PerformLayout();
             ResumeLayout(false);
