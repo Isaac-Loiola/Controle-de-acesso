@@ -91,6 +91,7 @@
             // cmb
             // 
             cmb.FormattingEnabled = true;
+            cmb.Items.AddRange(new object[] { "Adiministrador", "Funcionário", "Visitante" });
             cmb.Location = new Point(131, 230);
             cmb.Name = "cmb";
             cmb.Size = new Size(226, 23);
