@@ -7,15 +7,23 @@ using System.Threading.Tasks;
 
 namespace ControleAcesso.Core
 {
-    public static class Autenticador 
+    public class Autenticador 
     {
-        public static bool ValidarLogin(string cpf, string senha)
+        public int IdUsuario { get; set; }
+
+        public Autenticador()
+        {
+
+        }
+
+        public  bool ValidarLogin(string cpf, string senha)
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = $"select id from usuarios where cpf = '{cpf}' and senha = '{senha}'";
             //cmd.CommandText = $"select id from usuarios where cpf = '{Cpf}' and senha = md5('{Senha}')";
-            return Convert.ToBoolean(cmd.ExecuteScalar());
+            return Convert.ToBoolean(IdUsuario = Convert.ToInt32(cmd.ExecuteScalar()));
+   
         }
     }
 }
