@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ControleAcesso.Core
 {
-    class Autenticador
+    public static class Autenticador 
     {
-        public bool ValidarLogin(string cpf, string senha)
+        public static bool ValidarLogin(string cpf, string senha)
         {
-            return true;
+            var cmd = Banco.Abrir();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = $"select id from usuarios where cpf = '{cpf}' and senha = '{senha}'";
+            //cmd.CommandText = $"select id from usuarios where cpf = '{Cpf}' and senha = md5('{Senha}')";
+            return Convert.ToBoolean(cmd.ExecuteScalar());
         }
     }
 }

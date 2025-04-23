@@ -11,6 +11,8 @@ namespace ControleAcesso.UI
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            // TODO Refinar validação!
+            
             Usuario usuario = new(txtNome.Text, txtCpf.Text, cmb.SelectedIndex + 1, txtSenha.Text);
             usuario.Cadastrar();
 

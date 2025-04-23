@@ -61,13 +61,5 @@ namespace ControleAcesso.Core
             Id = Convert.ToInt32(cmd.ExecuteScalar());
         }
 
-        public bool VerificarLogin()
-        {
-            var cmd = Banco.Abrir();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = $"select id from usuarios where cpf = '{Cpf}' and senha = '{Senha}'";
-            //cmd.CommandText = $"select id from usuarios where cpf = '{Cpf}' and senha = md5('{Senha}')";
-            return Convert.ToBoolean(cmd.ExecuteScalar());
-        }
     }
 }

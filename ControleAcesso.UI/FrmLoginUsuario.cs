@@ -30,15 +30,19 @@ namespace ControleAcesso.UI
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new(txtLoginCpf.Text, txtLoginSenha.Text);
-            if (usuario.VerificarLogin())
+            // TODO: Refinar Validação!!!
+
+            bool verificador = Autenticador.ValidarLogin(txtLoginCpf.Text, txtLoginSenha.Text);
+            if (verificador)
             {
+            // Caso a verificação seja verdadeira, irá pular para outro formulário
                 FrmControleAcesso frmControleAcesso = new();
                 frmControleAcesso.Show();
                 this.Hide();
             }
             else
             {
+            // caso a verificação seja falsa, aparecerá uma mensagem.
                 MessageBox.Show("CPF ou senha incorreto");
             }
                 
