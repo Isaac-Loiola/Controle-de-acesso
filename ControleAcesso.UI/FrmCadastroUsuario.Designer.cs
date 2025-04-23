@@ -1,6 +1,6 @@
 ﻿namespace ControleAcesso.UI
 {
-    partial class CadastroUsuario
+    partial class FrmCadastroUsuario
     {
         /// <summary>
         ///  Required designer variable.

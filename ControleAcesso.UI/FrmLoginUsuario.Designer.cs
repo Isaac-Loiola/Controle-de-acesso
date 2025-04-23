@@ -1,6 +1,6 @@
 ﻿namespace ControleAcesso.UI
 {
-    partial class LoginUsuario
+    partial class FrmLoginUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            txtLoginSenha = new TextBox();
-            txtLoginCpf = new TextBox();
-            label1 = new Label();
             lblLoginSenha = new Label();
+            label1 = new Label();
+            txtLoginCpf = new TextBox();
+            txtLoginSenha = new TextBox();
             btnLogar = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -48,20 +48,14 @@
             panel1.Size = new Size(432, 320);
             panel1.TabIndex = 0;
             // 
-            // txtLoginSenha
+            // lblLoginSenha
             // 
-            txtLoginSenha.Location = new Point(100, 211);
-            txtLoginSenha.Name = "txtLoginSenha";
-            txtLoginSenha.Size = new Size(218, 23);
-            txtLoginSenha.TabIndex = 0;
-            txtLoginSenha.TextChanged += textBox1_TextChanged;
-            // 
-            // txtLoginCpf
-            // 
-            txtLoginCpf.Location = new Point(100, 90);
-            txtLoginCpf.Name = "txtLoginCpf";
-            txtLoginCpf.Size = new Size(218, 23);
-            txtLoginCpf.TabIndex = 1;
+            lblLoginSenha.AutoSize = true;
+            lblLoginSenha.Location = new Point(100, 193);
+            lblLoginSenha.Name = "lblLoginSenha";
+            lblLoginSenha.Size = new Size(39, 15);
+            lblLoginSenha.TabIndex = 3;
+            lblLoginSenha.Text = "Senha";
             // 
             // label1
             // 
@@ -72,14 +66,20 @@
             label1.TabIndex = 2;
             label1.Text = "CPF";
             // 
-            // lblLoginSenha
+            // txtLoginCpf
             // 
-            lblLoginSenha.AutoSize = true;
-            lblLoginSenha.Location = new Point(100, 193);
-            lblLoginSenha.Name = "lblLoginSenha";
-            lblLoginSenha.Size = new Size(39, 15);
-            lblLoginSenha.TabIndex = 3;
-            lblLoginSenha.Text = "Senha";
+            txtLoginCpf.Location = new Point(100, 90);
+            txtLoginCpf.Name = "txtLoginCpf";
+            txtLoginCpf.Size = new Size(218, 23);
+            txtLoginCpf.TabIndex = 1;
+            // 
+            // txtLoginSenha
+            // 
+            txtLoginSenha.Location = new Point(100, 211);
+            txtLoginSenha.Name = "txtLoginSenha";
+            txtLoginSenha.Size = new Size(218, 23);
+            txtLoginSenha.TabIndex = 0;
+            txtLoginSenha.TextChanged += textBox1_TextChanged;
             // 
             // btnLogar
             // 
@@ -89,15 +89,17 @@
             btnLogar.TabIndex = 1;
             btnLogar.Text = "Login";
             btnLogar.UseVisualStyleBackColor = true;
+            btnLogar.Click += btnLogar_Click;
             // 
-            // LoginUsuario
+            // FrmLoginUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1167, 624);
             Controls.Add(btnLogar);
             Controls.Add(panel1);
-            Name = "LoginUsuario";
+            Name = "FrmLoginUsuario";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginUsuario";
             Load += LoginUsuario_Load;
             panel1.ResumeLayout(false);

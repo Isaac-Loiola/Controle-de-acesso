@@ -28,11 +28,19 @@ namespace ControleAcesso.Core
             TipoUsuario = tipoUsuario;
             Senha = senha;
         }
+        // Construtor para cadastrar usuario
         public Usuario(string nome, string cpf, int tipoUsuario, string senha)
         {
             Nome = nome;
             Cpf = cpf;
             TipoUsuario = tipoUsuario;
+            Senha = senha;
+        }
+
+        // construtor para verificar login
+        public Usuario(string cpf, string senha)
+        {
+            Cpf = cpf;
             Senha = senha;
         }
 
@@ -53,5 +61,13 @@ namespace ControleAcesso.Core
             Id = Convert.ToInt32(cmd.ExecuteScalar());
         }
 
+        public bool VerificarLogin()
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = $"select id from usuarios where cpf = '{Cpf}' and senha = '{Senha}'";
+            //cmd.CommandText = $"select id from usuarios where cpf = '{Cpf}' and senha = md5('{Senha}')";
+            return Convert.ToBoolean(cmd.ExecuteScalar());
+        }
     }
 }

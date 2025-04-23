@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ControleAcesso.UI
 {
-    public partial class LoginUsuario : Form
+    public partial class FrmControleAcesso: Form
     {
-        public LoginUsuario()
+        public FrmControleAcesso()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LoginUsuario_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

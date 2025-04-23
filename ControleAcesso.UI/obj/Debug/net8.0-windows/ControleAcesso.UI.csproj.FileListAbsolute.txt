@@ -59,8 +59,6 @@ C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\bin\Debug\net8.
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\bin\Debug\net8.0-windows\ControleAcesso.Core.dll
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\bin\Debug\net8.0-windows\ControleAcesso.Core.pdb
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.csproj.AssemblyReference.cache
-C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.CadastroUsuario.resources
-C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.LoginUsuario.resources
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.csproj.GenerateResource.cache
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.AssemblyInfoInputs.cache
@@ -73,3 +71,6 @@ C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.pdb
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.genruntimeconfig.cache
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ref\ControleAcesso.UI.dll
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmCadastroUsuario.resources
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmControleAcesso.resources
+C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmLoginUsuario.resources

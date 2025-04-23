@@ -2,9 +2,9 @@ using ControleAcesso.Core;
 
 namespace ControleAcesso.UI
 {
-    public partial class CadastroUsuario : Form
+    public partial class FrmCadastroUsuario : Form
     {
-        public CadastroUsuario()
+        public FrmCadastroUsuario()
         {
             InitializeComponent();
         }
