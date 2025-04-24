@@ -24,6 +24,10 @@ namespace ControleAcesso.Core
             DataHora = dataHora;
             TipoOperacao = tipoOperacao;
         }
+        public RegistroAcesso()
+        {
+
+        }
 
         public void RegistrarAcesso()
         {
@@ -58,7 +62,7 @@ namespace ControleAcesso.Core
             DataHora = Convert.ToDateTime(cmd.ExecuteScalar());
         }
            
-        public List<RegistroAcesso> ListarRegistros()
+        public static List<RegistroAcesso> ListarRegistros()
         {
             var cmd = Banco.Abrir();
             List<RegistroAcesso> registros = new();

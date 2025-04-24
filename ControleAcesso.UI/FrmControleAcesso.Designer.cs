@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dgvListaRegistro = new DataGridView();
             clnIdUsuario = new DataGridViewTextBoxColumn();
             clnDataHora = new DataGridViewTextBoxColumn();
             clnTipoOperacao = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvListaRegistro
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clnIdUsuario, clnDataHora, clnTipoOperacao });
-            dataGridView1.Location = new Point(334, 63);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(538, 515);
-            dataGridView1.TabIndex = 0;
+            dgvListaRegistro.AllowUserToAddRows = false;
+            dgvListaRegistro.AllowUserToDeleteRows = false;
+            dgvListaRegistro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvListaRegistro.Columns.AddRange(new DataGridViewColumn[] { clnIdUsuario, clnDataHora, clnTipoOperacao });
+            dgvListaRegistro.Location = new Point(12, 60);
+            dgvListaRegistro.Name = "dgvListaRegistro";
+            dgvListaRegistro.ReadOnly = true;
+            dgvListaRegistro.RowHeadersVisible = false;
+            dgvListaRegistro.Size = new Size(499, 539);
+            dgvListaRegistro.TabIndex = 0;
             // 
             // clnIdUsuario
             // 
@@ -75,18 +76,19 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1167, 624);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvListaRegistro);
             Name = "FrmControleAcesso";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ControleAcesso";
+            FormClosing += FrmControleAcesso_FormClosing;
             Load += FrmControleAcesso_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvListaRegistro;
         private DataGridViewTextBoxColumn clnIdUsuario;
         private DataGridViewTextBoxColumn clnDataHora;
         private DataGridViewTextBoxColumn clnTipoOperacao;

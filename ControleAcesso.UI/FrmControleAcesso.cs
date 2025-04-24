@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControleAcesso.Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,23 @@ namespace ControleAcesso.UI
 
         private void FrmControleAcesso_Load(object sender, EventArgs e)
         {
-           
+            int linha = 0;
+            var listar = RegistroAcesso.ListarRegistros();
+            foreach(var lista in listar)
+            {
+                dgvListaRegistro.Rows.Add();
+                dgvListaRegistro.Rows[linha].Cells[0].Value = lista.UsuarioId;
+                dgvListaRegistro.Rows[linha].Cells[1].Value = lista.DataHora;
+                dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao;
+
+
+                linha++;
+            }
+        }
+
+        private void FrmControleAcesso_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }
