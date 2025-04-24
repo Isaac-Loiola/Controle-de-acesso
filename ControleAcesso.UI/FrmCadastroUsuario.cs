@@ -12,9 +12,9 @@ namespace ControleAcesso.UI
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             // TODO Refinar validação!
-            
+
             Usuario usuario = new(txtNome.Text, txtCpf.Text, cmb.SelectedIndex + 1, txtSenha.Text);
-            usuario.Cadastrar();    
+            usuario.Cadastrar();
 
             MessageBox.Show($"{usuario.Nome} cadastrado com sucesso!");
 
@@ -36,6 +36,16 @@ namespace ControleAcesso.UI
         }
 
         private void CadastroUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCpf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
         {
 
         }
