@@ -37,7 +37,7 @@ namespace ControleAcesso.UI
             if (verificador)
             {
                 // Caso a verificação seja verdadeira, irá pular para outro formulário
-                RegistroAcesso registroAcesso = new(autenticador.IdUsuario, 1);
+                RegistroAcesso registroAcesso = new(autenticador.IdUsuario);
                 registroAcesso.RegistrarAcesso();
 
                 FrmControleAcesso frmControleAcesso = new();

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ControleAcesso.UI
 {
-    public partial class FrmControleAcesso: Form
+    public partial class FrmControleAcesso : Form
     {
         public FrmControleAcesso()
         {
             InitializeComponent();
+        }
+
+        private void FrmControleAcesso_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

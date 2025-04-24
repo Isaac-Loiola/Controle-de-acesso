@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnCadastrar = new Button();
             lblLoginSenha = new Label();
             label1 = new Label();
             txtLoginCpf = new TextBox();
             txtLoginSenha = new TextBox();
             btnLogar = new Button();
-            btnCadastrar = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,6 +49,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(432, 320);
             panel1.TabIndex = 0;
+            // 
+            // btnCadastrar
+            // 
+            btnCadastrar.Location = new Point(231, 251);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(87, 23);
+            btnCadastrar.TabIndex = 4;
+            btnCadastrar.Text = "Cadastre-se";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // lblLoginSenha
             // 
@@ -92,16 +102,6 @@
             btnLogar.Text = "Login";
             btnLogar.UseVisualStyleBackColor = true;
             btnLogar.Click += btnLogar_Click;
-            // 
-            // btnCadastrar
-            // 
-            btnCadastrar.Location = new Point(231, 251);
-            btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(87, 23);
-            btnCadastrar.TabIndex = 4;
-            btnCadastrar.Text = "Cadastre-se";
-            btnCadastrar.UseVisualStyleBackColor = true;
-            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // FrmLoginUsuario
             // 
