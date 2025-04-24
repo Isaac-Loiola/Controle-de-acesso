@@ -44,13 +44,15 @@
             // 
             dgvListaRegistro.AllowUserToAddRows = false;
             dgvListaRegistro.AllowUserToDeleteRows = false;
+            dgvListaRegistro.BackgroundColor = Color.White;
+            dgvListaRegistro.BorderStyle = BorderStyle.None;
             dgvListaRegistro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListaRegistro.Columns.AddRange(new DataGridViewColumn[] { clnIdUsuario, clnDataHora, clnTipoOperacao });
             dgvListaRegistro.Location = new Point(43, 100);
             dgvListaRegistro.Name = "dgvListaRegistro";
             dgvListaRegistro.ReadOnly = true;
             dgvListaRegistro.RowHeadersVisible = false;
-            dgvListaRegistro.Size = new Size(499, 417);
+            dgvListaRegistro.Size = new Size(502, 417);
             dgvListaRegistro.TabIndex = 0;
             // 
             // clnIdUsuario
@@ -80,13 +82,15 @@
             // 
             dgvListaUsuarios.AllowUserToAddRows = false;
             dgvListaUsuarios.AllowUserToDeleteRows = false;
+            dgvListaUsuarios.BackgroundColor = Color.White;
+            dgvListaUsuarios.BorderStyle = BorderStyle.None;
             dgvListaUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListaUsuarios.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnTipoUsuario, clnDataOperacao });
             dgvListaUsuarios.Location = new Point(625, 100);
             dgvListaUsuarios.Name = "dgvListaUsuarios";
             dgvListaUsuarios.ReadOnly = true;
             dgvListaUsuarios.RowHeadersVisible = false;
-            dgvListaUsuarios.Size = new Size(499, 417);
+            dgvListaUsuarios.Size = new Size(502, 417);
             dgvListaUsuarios.TabIndex = 1;
             // 
             // clnNome

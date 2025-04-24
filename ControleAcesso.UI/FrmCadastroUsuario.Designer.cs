@@ -95,7 +95,7 @@
             // lblCpf
             // 
             lblCpf.AutoSize = true;
-            lblCpf.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCpf.Font = new Font("Berlin Sans FB", 11.25F);
             lblCpf.Location = new Point(115, 120);
             lblCpf.Name = "lblCpf";
             lblCpf.Size = new Size(34, 17);

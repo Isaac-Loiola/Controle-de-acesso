@@ -58,7 +58,12 @@ namespace ControleAcesso.UI
             FrmCadastroUsuario frmCadastroUsuario = new();
             frmCadastroUsuario.Show();
             this.Hide();
-            
+
+        }
+
+        private void txtLoginCpf_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
