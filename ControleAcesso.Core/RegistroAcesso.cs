@@ -50,12 +50,8 @@ namespace ControleAcesso.Core
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = $"select id from usuarios order by id desc limit 1";
-            Id = Convert.ToInt32(cmd.ExecuteScalar());
-
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "";
-
+            cmd.CommandText = $"update registro set tipo_operacao = 0 where id order by id desc limit 1";
+            cmd.ExecuteNonQuery();
 
         }
            
