@@ -36,7 +36,7 @@ namespace ControleAcesso.UI
             bool verificador = autenticador.ValidarLogin(txtLoginCpf.Text, txtLoginSenha.Text);
             if (verificador)
             {
-            // Caso a verificação seja verdadeira, irá pular para outro formulário
+                // Caso a verificação seja verdadeira, irá pular para outro formulário
                 RegistroAcesso registroAcesso = new(autenticador.IdUsuario, 1);
                 registroAcesso.RegistrarAcesso();
 
@@ -46,11 +46,19 @@ namespace ControleAcesso.UI
             }
             else
             {
-            // caso a verificação seja falsa, aparecerá uma mensagem.
+                // caso a verificação seja falsa, aparecerá uma mensagem.
                 MessageBox.Show("CPF ou senha incorreto");
             }
 
 
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            FrmCadastroUsuario frmCadastroUsuario = new();
+            frmCadastroUsuario.Show();
+            this.Hide();
+            
         }
     }
 }

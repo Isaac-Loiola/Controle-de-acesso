@@ -33,6 +33,12 @@ namespace ControleAcesso.Core
             cmd.CommandText = "select data_hora from registro order by id desc limit 1";
             DataHora = Convert.ToDateTime(cmd.ExecuteScalar());
         }
+
+        public void SaidaAcesso()
+        {
+            var cmd = Banco.Abrir();
+            cmd.CommandType = System.Data.CommandType.Text;
+        }
             
     }
 }

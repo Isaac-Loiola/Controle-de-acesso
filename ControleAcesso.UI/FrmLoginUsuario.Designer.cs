@@ -34,11 +34,13 @@
             txtLoginCpf = new TextBox();
             txtLoginSenha = new TextBox();
             btnLogar = new Button();
+            btnCadastrar = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(btnCadastrar);
             panel1.Controls.Add(lblLoginSenha);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(txtLoginCpf);
@@ -91,6 +93,16 @@
             btnLogar.UseVisualStyleBackColor = true;
             btnLogar.Click += btnLogar_Click;
             // 
+            // btnCadastrar
+            // 
+            btnCadastrar.Location = new Point(231, 251);
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.Size = new Size(87, 23);
+            btnCadastrar.TabIndex = 4;
+            btnCadastrar.Text = "Cadastre-se";
+            btnCadastrar.UseVisualStyleBackColor = true;
+            btnCadastrar.Click += btnCadastrar_Click;
+            // 
             // FrmLoginUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -115,5 +127,6 @@
         private Label lblLoginSenha;
         private Label label1;
         private Button btnLogar;
+        private Button btnCadastrar;
     }
 }

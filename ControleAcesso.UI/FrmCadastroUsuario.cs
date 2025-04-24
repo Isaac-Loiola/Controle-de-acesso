@@ -17,6 +17,9 @@ namespace ControleAcesso.UI
             usuario.Cadastrar();
 
             MessageBox.Show($"{usuario.Nome} cadastrado com sucesso!");
+
+            FrmControleAcesso frmControleAcesso = new();
+            this.Hide();
         }
 
         private void chkExibirSenha_CheckedChanged(object sender, EventArgs e)
