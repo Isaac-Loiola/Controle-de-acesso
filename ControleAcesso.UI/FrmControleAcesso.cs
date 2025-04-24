@@ -21,14 +21,26 @@ namespace ControleAcesso.UI
         private void FrmControleAcesso_Load(object sender, EventArgs e)
         {
             int linha = 0;
-            var listar = RegistroAcesso.ListarRegistros();
-            foreach(var lista in listar)
+            var registros = RegistroAcesso.ListarRegistros();
+            foreach(var lista in registros)
             {
                 dgvListaRegistro.Rows.Add();
                 dgvListaRegistro.Rows[linha].Cells[0].Value = lista.UsuarioId;
                 dgvListaRegistro.Rows[linha].Cells[1].Value = lista.DataHora;
-                dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao;
+                dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao==0?"Saída":"Entrada";
 
+
+                linha++;
+            }
+
+            linha = 0;
+            var usuarios = Usuario.ListarUsuarios();
+            foreach(var lista in usuarios)
+            {
+                dgvListaUsuarios.Rows.Add();
+                dgvListaUsuarios.Rows[linha].Cells[0].Value = lista.Nome;
+                dgvListaUsuarios.Rows[linha].Cells[1].Value = lista.TipoUsuario;
+                dgvListaUsuarios.Rows[linha].Cells[2].Value = lista.DataCriacao;
 
                 linha++;
             }

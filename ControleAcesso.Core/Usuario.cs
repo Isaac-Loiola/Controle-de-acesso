@@ -38,18 +38,18 @@ namespace ControleAcesso.Core
             Senha = senha;
         }
 
-        public Usuario(string nome, int tipoUsuario, DateTime datacriacao)
-        {
-            Nome = nome;
-            TipoUsuario = tipoUsuario;
-            DataCriacao = datacriacao;
-        }
 
         // construtor para verificar login
         public Usuario(string cpf, string senha)
         {
             Cpf = cpf;
             Senha = senha;
+        }
+        public Usuario(string nome, int tipoUsuario, DateTime datacriacao)
+        {
+            Nome = nome;
+            TipoUsuario = tipoUsuario;
+            DataCriacao = datacriacao;
         }
 
         /// <summary>

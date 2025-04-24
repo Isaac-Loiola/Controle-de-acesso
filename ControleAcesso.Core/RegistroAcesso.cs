@@ -50,16 +50,13 @@ namespace ControleAcesso.Core
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = $"insert into registro(id_usuario, tipo_operacao) values({UsuarioId}, 0";
-
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select id from registro order by id desc limit 1";
+            cmd.CommandText = $"select id from usuarios order by id desc limit 1";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
 
             cmd.CommandType = System.Data.CommandType.Text;
-            //registros
-            cmd.CommandText = "select data_hora from registro order by id desc limit 1";
-            DataHora = Convert.ToDateTime(cmd.ExecuteScalar());
+            cmd.CommandText = "";
+
+
         }
            
         public static List<RegistroAcesso> ListarRegistros()

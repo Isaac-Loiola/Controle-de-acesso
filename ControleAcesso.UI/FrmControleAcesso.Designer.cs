@@ -32,12 +32,12 @@
             clnIdUsuario = new DataGridViewTextBoxColumn();
             clnDataHora = new DataGridViewTextBoxColumn();
             clnTipoOperacao = new DataGridViewTextBoxColumn();
-            dgvUsuarios = new DataGridView();
+            dgvListaUsuarios = new DataGridView();
             clnNome = new DataGridViewTextBoxColumn();
             clnTipoUsuario = new DataGridViewTextBoxColumn();
             clnDataOperacao = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvListaUsuarios).BeginInit();
             SuspendLayout();
             // 
             // dgvListaRegistro
@@ -76,17 +76,18 @@
             clnTipoOperacao.ReadOnly = true;
             clnTipoOperacao.Width = 150;
             // 
-            // dgvUsuarios
+            // dgvListaUsuarios
             // 
-            dgvUsuarios.AllowUserToDeleteRows = false;
-            dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsuarios.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnTipoUsuario, clnDataOperacao });
-            dgvUsuarios.Location = new Point(625, 100);
-            dgvUsuarios.Name = "dgvUsuarios";
-            dgvUsuarios.ReadOnly = true;
-            dgvUsuarios.RowHeadersVisible = false;
-            dgvUsuarios.Size = new Size(499, 417);
-            dgvUsuarios.TabIndex = 1;
+            dgvListaUsuarios.AllowUserToAddRows = false;
+            dgvListaUsuarios.AllowUserToDeleteRows = false;
+            dgvListaUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvListaUsuarios.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnTipoUsuario, clnDataOperacao });
+            dgvListaUsuarios.Location = new Point(625, 100);
+            dgvListaUsuarios.Name = "dgvListaUsuarios";
+            dgvListaUsuarios.ReadOnly = true;
+            dgvListaUsuarios.RowHeadersVisible = false;
+            dgvListaUsuarios.Size = new Size(499, 417);
+            dgvListaUsuarios.TabIndex = 1;
             // 
             // clnNome
             // 
@@ -113,7 +114,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1167, 624);
-            Controls.Add(dgvUsuarios);
+            Controls.Add(dgvListaUsuarios);
             Controls.Add(dgvListaRegistro);
             Name = "FrmControleAcesso";
             StartPosition = FormStartPosition.CenterScreen;
@@ -121,7 +122,7 @@
             FormClosing += FrmControleAcesso_FormClosing;
             Load += FrmControleAcesso_Load;
             ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvListaUsuarios).EndInit();
             ResumeLayout(false);
         }
 
@@ -131,7 +132,7 @@
         private DataGridViewTextBoxColumn clnIdUsuario;
         private DataGridViewTextBoxColumn clnDataHora;
         private DataGridViewTextBoxColumn clnTipoOperacao;
-        private DataGridView dgvUsuarios;
+        private DataGridView dgvListaUsuarios;
         private DataGridViewTextBoxColumn clnNome;
         private DataGridViewTextBoxColumn clnTipoUsuario;
         private DataGridViewTextBoxColumn clnDataOperacao;
