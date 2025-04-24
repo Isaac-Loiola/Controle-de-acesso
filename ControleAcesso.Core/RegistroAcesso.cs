@@ -84,5 +84,6 @@ namespace ControleAcesso.Core
 
             return registros;
         }
+
     }
 }

@@ -15,6 +15,7 @@ namespace ControleAcesso.Core
         public string Cpf { get; set; }
         public int TipoUsuario { get; set; }
         public string Senha { get; set; }
+        public DateTime DataCriacao { get; set; }
 
         public Usuario()
         {
@@ -35,6 +36,13 @@ namespace ControleAcesso.Core
             Cpf = cpf;
             TipoUsuario = tipoUsuario;
             Senha = senha;
+        }
+
+        public Usuario(string nome, int tipoUsuario, DateTime datacriacao)
+        {
+            Nome = nome;
+            TipoUsuario = tipoUsuario;
+            DataCriacao = datacriacao;
         }
 
         // construtor para verificar login
@@ -59,6 +67,29 @@ namespace ControleAcesso.Core
             cmd.ExecuteNonQuery();
             cmd.CommandText = "select id from usuarios order by id desc limit 1";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
+        }
+
+        public static List<Usuario> ListarUsuarios()
+        {
+            List<Usuario> usuarios = new();
+            var cmd = Banco.Abrir();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "select * from usuarios";
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                usuarios.Add
+                    (
+                        new
+                        (
+                            dr.GetString(1),
+                            dr.GetInt32(3),
+                            dr.GetDateTime(5)
+                        )
+                    );
+            }
+
+            return usuarios;
         }
 
     }
