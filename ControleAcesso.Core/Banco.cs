@@ -12,8 +12,8 @@ namespace ControleAcesso.Core
         public static MySqlCommand Abrir()
         {
             MySqlCommand cmd = new();
-            string strconn = @"server=192.168.18.157;database=controleacessodb;user=isaac;password=Az.103098";
-            //string strconn = @"server=127.0.0.1;database=controleacessodb;user=root;password=";
+            //string strconn = @"server=192.168.18.157;database=controleacessodb;user=isaac;password=Az.103098";
+            string strconn = @"server=127.0.0.1;database=controleacessodb;user=root;password=";
 
             MySqlConnection cn = new(strconn);
             try

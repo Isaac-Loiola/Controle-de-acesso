@@ -37,6 +37,9 @@ namespace ControleAcesso.UI
             if (verificador)
             {
             // Caso a verificação seja verdadeira, irá pular para outro formulário
+                RegistroAcesso registroAcesso = new(autenticador.IdUsuario, 1);
+                registroAcesso.RegistrarAcesso();
+
                 FrmControleAcesso frmControleAcesso = new();
                 frmControleAcesso.Show();
                 this.Hide();
@@ -47,8 +50,6 @@ namespace ControleAcesso.UI
                 MessageBox.Show("CPF ou senha incorreto");
             }
 
-            RegistroAcesso registroAcesso = new(autenticador.IdUsuario, 1);
-            registroAcesso.RegistrarAcesso();
 
         }
     }

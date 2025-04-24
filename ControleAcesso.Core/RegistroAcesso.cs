@@ -25,11 +25,12 @@ namespace ControleAcesso.Core
             cmd.ExecuteNonQuery();
 
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select select id from registro order by id desc limit 1";
-           Id = Convert.ToInt32(cmd.ExecuteScalar());
+            cmd.CommandText = "select id from registro order by id desc limit 1";
+            Id = Convert.ToInt32(cmd.ExecuteScalar());
 
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select data_hora from registros order by id desc limit 1";
+            //registros
+            cmd.CommandText = "select data_hora from registro order by id desc limit 1";
             DataHora = Convert.ToDateTime(cmd.ExecuteScalar());
         }
             

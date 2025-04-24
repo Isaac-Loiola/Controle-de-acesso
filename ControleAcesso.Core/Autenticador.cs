@@ -20,8 +20,8 @@ namespace ControleAcesso.Core
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = $"select id from usuarios where cpf = '{cpf}' and senha = '{senha}'";
-            //cmd.CommandText = $"select id from usuarios where cpf = '{Cpf}' and senha = md5('{Senha}')";
+            //cmd.CommandText = $"select id from usuarios where cpf = '{cpf}' and senha = '{senha}'";
+            cmd.CommandText = $"select id from usuarios where cpf = '{cpf}' and senha = md5('{senha}')";
             return Convert.ToBoolean(IdUsuario = Convert.ToInt32(cmd.ExecuteScalar()));
    
         }

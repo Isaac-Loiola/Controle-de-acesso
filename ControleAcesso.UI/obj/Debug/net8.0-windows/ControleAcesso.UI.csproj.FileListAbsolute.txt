@@ -22,7 +22,6 @@ C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\bin\Debug\n
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\bin\Debug\net8.0-windows\ControleAcesso.Core.dll
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\bin\Debug\net8.0-windows\ControleAcesso.Core.pdb
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.csproj.AssemblyReference.cache
-C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.CadastroUsuario.resources
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.csproj.GenerateResource.cache
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.AssemblyInfoInputs.cache
@@ -74,3 +73,6 @@ C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmCadastroUsuario.resources
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmControleAcesso.resources
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmLoginUsuario.resources
+C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmCadastroUsuario.resources
+C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmControleAcesso.resources
+C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmLoginUsuario.resources
