@@ -14,7 +14,7 @@ namespace ControleAcesso.UI
             // TODO Refinar validação!
             
             Usuario usuario = new(txtNome.Text, txtCpf.Text, cmb.SelectedIndex + 1, txtSenha.Text);
-            usuario.Cadastrar();
+            usuario.Cadastrar();    
 
             MessageBox.Show($"{usuario.Nome} cadastrado com sucesso!");
 

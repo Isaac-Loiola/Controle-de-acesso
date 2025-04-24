@@ -46,7 +46,7 @@ namespace ControleAcesso.Core
             DataHora = Convert.ToDateTime(cmd.ExecuteScalar());
         }
 
-        public void SaidaAcesso()
+        public static void SaidaAcesso()
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;

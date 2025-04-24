@@ -48,7 +48,7 @@ namespace ControleAcesso.UI
 
         private void FrmControleAcesso_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            RegistroAcesso.SaidaAcesso();
         }
     }
 }
