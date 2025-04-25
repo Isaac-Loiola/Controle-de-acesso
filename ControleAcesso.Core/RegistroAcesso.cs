@@ -36,6 +36,11 @@ namespace ControleAcesso.Core
             cmd.CommandText = $"insert into registro(id_usuario, tipo_operacao) values({UsuarioId}, 1)";
             cmd.ExecuteNonQuery();
 
+            // Um  novo registro para quando o usuario sair fazer um update e não interferir no outro!
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = $"insert into registro(id_usuario, tipo_operacao) values({UsuarioId}, 1)";
+            cmd.ExecuteNonQuery();
+
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = "select id from registro order by id desc limit 1";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
@@ -50,7 +55,8 @@ namespace ControleAcesso.Core
         {
             var cmd = Banco.Abrir();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = $"update registro set tipo_operacao = 0 where id order by id desc limit 1";
+            //cmd.CommandText = $"update registro set tipo_operacao = 0 and data_hora = current_timestamp where id order by id desc limit 1";
+            cmd.CommandText = $"update registro set tipo_operacao = 0 and data_hora = current_timestamp() where id order by id desc limit 1";
             cmd.ExecuteNonQuery();
 
         }
