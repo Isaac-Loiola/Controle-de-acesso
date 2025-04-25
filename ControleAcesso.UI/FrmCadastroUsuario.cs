@@ -19,9 +19,13 @@ namespace ControleAcesso.UI
 
                 MessageBox.Show($"{usuario.Nome} cadastrado com sucesso!");
 
+                RegistroAcesso registrarUsuarioCadastrado = new(usuario.Id);
+                registrarUsuarioCadastrado.RegistrarAcesso();
+
                 FrmControleAcesso frmControleAcesso = new();
                 frmControleAcesso.Show();
                 this.Hide();
+
             }
             else
             {

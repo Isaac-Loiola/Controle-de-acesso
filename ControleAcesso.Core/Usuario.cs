@@ -62,9 +62,9 @@ namespace ControleAcesso.Core
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = $"insert into usuarios(nome, cpf, tipousuario, senha) " +
                               $"values ('{Nome}', '{Cpf}', {TipoUsuario}, md5('{Senha}'))";
-            //$"values ('{Nome}', '{Cpf}', {TipoUsuario}, '{Senha}')";
-
             cmd.ExecuteNonQuery();
+
+            cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select id from usuarios order by id desc limit 1";
             Id = Convert.ToInt32(cmd.ExecuteScalar());
         }

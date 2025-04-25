@@ -39,7 +39,7 @@ namespace ControleAcesso.Core
             cmd.CommandText = $"insert into registro(id_usuario, tipo_operacao) values({UsuarioId}, 1)";
             cmd.ExecuteNonQuery();
 
-            // Um  novo registro para quando o usuario sair fazer um update e não interferir no outro!
+            // Um  novo registro para quando o usuario sair fazer um update e não interferir no registro anterior de entrada!
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = $"insert into registro(id_usuario, tipo_operacao) values({UsuarioId}, 1)";
             cmd.ExecuteNonQuery();

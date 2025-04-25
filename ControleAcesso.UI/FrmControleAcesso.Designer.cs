@@ -38,12 +38,11 @@
             clnDataHora = new DataGridViewTextBoxColumn();
             clnTipoOperacao = new DataGridViewTextBoxColumn();
             dgvListaUsuarios = new DataGridView();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
             clnNome = new DataGridViewTextBoxColumn();
             clnTipoUsuario = new DataGridViewTextBoxColumn();
             clnDataOperacao = new DataGridViewTextBoxColumn();
+            panel2 = new Panel();
+            panel3 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvListaUsuarios).BeginInit();
             panel2.SuspendLayout();
@@ -146,35 +145,6 @@
             dgvListaUsuarios.Size = new Size(502, 417);
             dgvListaUsuarios.TabIndex = 1;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Transparent;
-            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.Location = new Point(12, 606);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1119, 468);
-            panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Transparent;
-            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
-            panel2.Controls.Add(dgvListaRegistro);
-            panel2.Location = new Point(32, 129);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(520, 441);
-            panel2.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Transparent;
-            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
-            panel3.Controls.Add(dgvListaUsuarios);
-            panel3.Location = new Point(593, 129);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(520, 441);
-            panel3.TabIndex = 4;
-            // 
             // clnNome
             // 
             clnNome.Frozen = true;
@@ -198,6 +168,26 @@
             clnDataOperacao.ReadOnly = true;
             clnDataOperacao.Width = 153;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Transparent;
+            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
+            panel2.Controls.Add(dgvListaRegistro);
+            panel2.Location = new Point(45, 112);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(520, 441);
+            panel2.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Transparent;
+            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
+            panel3.Controls.Add(dgvListaUsuarios);
+            panel3.Location = new Point(606, 112);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(520, 441);
+            panel3.TabIndex = 4;
+            // 
             // FrmControleAcesso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -205,7 +195,6 @@
             ClientSize = new Size(1167, 624);
             Controls.Add(panel3);
             Controls.Add(panel2);
-            Controls.Add(panel1);
             Name = "FrmControleAcesso";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ControleAcesso";
@@ -225,7 +214,6 @@
         private DataGridViewTextBoxColumn clnDataHora;
         private DataGridViewTextBoxColumn clnTipoOperacao;
         private DataGridView dgvListaUsuarios;
-        private Panel panel1;
         private Panel panel2;
         private Panel panel3;
         private DataGridViewTextBoxColumn clnNome;
