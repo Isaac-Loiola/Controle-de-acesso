@@ -31,23 +31,29 @@ namespace ControleAcesso.UI
         private void btnLogar_Click(object sender, EventArgs e)
         {
             // TODO: Refinar Validação!!!
-
-            Autenticador autenticador = new();
-            bool verificador = autenticador.ValidarLogin(txtLoginCpf.Text, txtLoginSenha.Text);
-            if (verificador)
+            if (txtLoginCpf.Text != String.Empty && txtLoginSenha.Text != String.Empty)
             {
-                // Caso a verificação seja verdadeira, irá pular para outro formulário
-                RegistroAcesso registroAcesso = new(autenticador.IdUsuario);
-                registroAcesso.RegistrarAcesso();
+                Autenticador autenticador = new();
+                bool verificador = autenticador.ValidarLogin(txtLoginCpf.Text, txtLoginSenha.Text);
+                if (verificador)
+                {
+                    // Caso a verificação seja verdadeira, irá pular para outro formulário
+                    RegistroAcesso registroAcesso = new(autenticador.IdUsuario);
+                    registroAcesso.RegistrarAcesso();
 
-                FrmControleAcesso frmControleAcesso = new();
-                frmControleAcesso.Show();
-                this.Hide();
+                    FrmControleAcesso frmControleAcesso = new();
+                    frmControleAcesso.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    // caso a verificação seja falsa, aparecerá uma mensagem.
+                    MessageBox.Show("CPF ou senha incorreto");
+                }
             }
             else
             {
-                // caso a verificação seja falsa, aparecerá uma mensagem.
-                MessageBox.Show("CPF ou senha incorreto");
+                MessageBox.Show("Campos CPF e Senha são obrigatórios");
             }
 
 
