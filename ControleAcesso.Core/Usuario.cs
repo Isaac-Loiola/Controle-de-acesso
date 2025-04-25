@@ -54,7 +54,7 @@ namespace ControleAcesso.Core
 
         /// <summary>
         /// Método para inserir o usuario no banco de dados.
-        /// São necessarios as seguintes propriedades: Nome, Cpf, TipoUsuario e Senha
+        /// São necessarios Nome, Cpf, TipoUsuario e Senha.
         /// </summary>
         public void Cadastrar()
         {
@@ -69,6 +69,10 @@ namespace ControleAcesso.Core
             Id = Convert.ToInt32(cmd.ExecuteScalar());
         }
 
+        /// <summary>
+        /// Método estático que busca os usuarios cadastrados na aplicação.
+        /// </summary>
+        /// <returns>Retorna Lista de Usuarios.</returns>
         public static List<Usuario> ListarUsuarios()
         {
             List<Usuario> usuarios = new();

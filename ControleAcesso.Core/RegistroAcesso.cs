@@ -11,7 +11,6 @@ namespace ControleAcesso.Core
         public int TipoOperacao { get; set; }
 
         // Construtor necessário para o método RegistrarAcesso()
-
         public RegistroAcesso(int usuarioId)
         {
             UsuarioId = usuarioId;
@@ -29,6 +28,10 @@ namespace ControleAcesso.Core
 
         }
 
+        /// <summary>
+        /// O método registra acesso de entrada no banco de dados. 
+        /// Precisa de um objeto com Id do Usuario.
+        /// </summary>
         public void RegistrarAcesso()
         {
             var cmd = Banco.Abrir();
@@ -51,6 +54,9 @@ namespace ControleAcesso.Core
             DataHora = Convert.ToDateTime(cmd.ExecuteScalar());
         }
 
+        /// <summary>
+        /// Método registra saida do ultimo usuario que acessou a aplicação.
+        /// </summary>
         public static void SaidaAcesso()
         {
             var cmd = Banco.Abrir();
@@ -61,6 +67,10 @@ namespace ControleAcesso.Core
 
         }
            
+        /// <summary>
+        /// Método estático que faz uma busca completa de todos os registros de entrada e saída.
+        /// </summary>
+        /// <returns>Retorna uma lista geral de todos os registros.</returns>
         public static List<RegistroAcesso> ListarRegistros()
         {
             var cmd = Banco.Abrir();

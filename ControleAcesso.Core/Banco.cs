@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace ControleAcesso.Core
 {
+    /// <summary>
+    /// Método para abrir a conexão do banco de dados.
+    /// </summary>
     public static class Banco
     {
         public static MySqlCommand Abrir()
