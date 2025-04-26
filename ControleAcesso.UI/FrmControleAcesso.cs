@@ -55,5 +55,10 @@ namespace ControleAcesso.UI
         {
 
         }
+
+        private void txtBuscarPorNome_Enter(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

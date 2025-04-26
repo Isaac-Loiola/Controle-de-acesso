@@ -94,5 +94,27 @@ namespace ControleAcesso.Core
             return registros;
         }
 
+        
+        public static List<RegistroAcesso> ListarRegistroPorNomeDeUsuario(string nome)
+        {
+            var cmd = Banco.Abrir();
+            List<RegistroAcesso> registroPorNome = new();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = $"select id_usuario, data_hora, tipo_operacao from  registro r join usuarios u on r.id_usuario = u.id where nome = '{nome}'";
+            var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                registroPorNome.Add
+                    (
+                        new
+                        (
+                            dr.GetInt32(1),
+                            dr.GetDateTime(2),
+                            dr.GetInt32(3)
+                        )
+                    );
+            }
+
+        }
     }
 }
