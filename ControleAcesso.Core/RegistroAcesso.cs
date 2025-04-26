@@ -94,7 +94,11 @@ namespace ControleAcesso.Core
             return registros;
         }
 
-        
+        /// <summary>
+        /// Método que busca registros de um usuario e lista!
+        /// </summary>
+        /// <param name="nome"></param>
+        /// <returns>Lista de registros de um usuario</returns>
         public static List<RegistroAcesso> ListarRegistroPorNomeDeUsuario(string nome)
         {
             var cmd = Banco.Abrir();
@@ -108,12 +112,14 @@ namespace ControleAcesso.Core
                     (
                         new
                         (
-                            dr.GetInt32(1),
-                            dr.GetDateTime(2),
-                            dr.GetInt32(3)
+                            dr.GetInt32(0),
+                            dr.GetDateTime(1),
+                            dr.GetInt32(2)
                         )
                     );
             }
+
+            return registroPorNome;
 
         }
     }

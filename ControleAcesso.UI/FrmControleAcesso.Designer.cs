@@ -210,6 +210,7 @@
             txtBuscarPorNome.Size = new Size(262, 16);
             txtBuscarPorNome.TabIndex = 7;
             txtBuscarPorNome.Enter += txtBuscarPorNome_Enter;
+            txtBuscarPorNome.KeyPress += txtBuscarPorNome_KeyPress;
             // 
             // FrmControleAcesso
             // 

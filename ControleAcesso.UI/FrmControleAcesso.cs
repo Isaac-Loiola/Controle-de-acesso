@@ -58,7 +58,22 @@ namespace ControleAcesso.UI
 
         private void txtBuscarPorNome_Enter(object sender, EventArgs e)
         {
-            
+           
+        }
+
+        private void txtBuscarPorNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            int linha = 0;
+            var registrosNome = RegistroAcesso.ListarRegistroPorNomeDeUsuario(txtBuscarPorNome.Text);
+            foreach (var lista in registrosNome)
+            {
+                dgvListaRegistro.Rows.Add();
+                dgvListaRegistro.Rows[linha].Cells[0].Value = lista.UsuarioId;
+                dgvListaRegistro.Rows[linha].Cells[1].Value = lista.DataHora;
+                dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao == 0 ? "Saída" : "Entrada";
+
+                linha++;
+            }
         }
     }
 }
