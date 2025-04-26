@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmControleAcesso));
             dgvListaRegistro = new DataGridView();
             clnIdUsuario = new DataGridViewTextBoxColumn();
@@ -45,6 +45,7 @@
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
             txtBuscarPorNome = new TextBox();
+            btnLimpar = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvListaUsuarios).BeginInit();
             panel2.SuspendLayout();
@@ -62,24 +63,24 @@
             dgvListaRegistro.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgvListaRegistro.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             dgvListaRegistro.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvListaRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle9.BackColor = SystemColors.Control;
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            dgvListaRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             dgvListaRegistro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListaRegistro.Columns.AddRange(new DataGridViewColumn[] { clnIdUsuario, clnDataHora, clnTipoOperacao });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 10F);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dgvListaRegistro.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle10.BackColor = SystemColors.Window;
+            dataGridViewCellStyle10.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle10.ForeColor = Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.False;
+            dgvListaRegistro.DefaultCellStyle = dataGridViewCellStyle10;
             dgvListaRegistro.Location = new Point(10, 13);
             dgvListaRegistro.MultiSelect = false;
             dgvListaRegistro.Name = "dgvListaRegistro";
@@ -121,24 +122,24 @@
             dgvListaUsuarios.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgvListaUsuarios.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             dgvListaUsuarios.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = SystemColors.Control;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvListaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle11.BackColor = SystemColors.Control;
+            dataGridViewCellStyle11.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle11.ForeColor = Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
+            dgvListaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             dgvListaUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListaUsuarios.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnTipoUsuario, clnDataOperacao });
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = SystemColors.Window;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 10F);
-            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-            dgvListaUsuarios.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle12.BackColor = SystemColors.Window;
+            dataGridViewCellStyle12.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle12.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.False;
+            dgvListaUsuarios.DefaultCellStyle = dataGridViewCellStyle12;
             dgvListaUsuarios.GridColor = Color.White;
             dgvListaUsuarios.Location = new Point(9, 13);
             dgvListaUsuarios.MultiSelect = false;
@@ -209,14 +210,31 @@
             txtBuscarPorNome.PlaceholderText = "Buscar por nome";
             txtBuscarPorNome.Size = new Size(262, 16);
             txtBuscarPorNome.TabIndex = 7;
+            txtBuscarPorNome.TextChanged += txtBuscarPorNome_TextChanged;
             txtBuscarPorNome.Enter += txtBuscarPorNome_Enter;
+            txtBuscarPorNome.KeyDown += txtBuscarPorNome_KeyDown;
             txtBuscarPorNome.KeyPress += txtBuscarPorNome_KeyPress;
+            // 
+            // btnLimpar
+            // 
+            btnLimpar.BackColor = Color.Transparent;
+            btnLimpar.BackgroundImage = (Image)resources.GetObject("btnLimpar.BackgroundImage");
+            btnLimpar.FlatAppearance.BorderSize = 0;
+            btnLimpar.FlatStyle = FlatStyle.Flat;
+            btnLimpar.Location = new Point(215, 559);
+            btnLimpar.Name = "btnLimpar";
+            btnLimpar.Size = new Size(165, 50);
+            btnLimpar.TabIndex = 8;
+            btnLimpar.Text = "Limpar";
+            btnLimpar.UseVisualStyleBackColor = false;
+            btnLimpar.Click += btnLimpar_Click;
             // 
             // FrmControleAcesso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1167, 624);
+            Controls.Add(btnLimpar);
             Controls.Add(txtBuscarPorNome);
             Controls.Add(pictureBox1);
             Controls.Add(panel3);
@@ -249,5 +267,6 @@
         private DataGridViewTextBoxColumn clnDataOperacao;
         private PictureBox pictureBox1;
         private TextBox txtBuscarPorNome;
+        private Button btnLimpar;
     }
 }

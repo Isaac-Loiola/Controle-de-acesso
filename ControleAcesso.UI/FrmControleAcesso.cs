@@ -20,6 +20,7 @@ namespace ControleAcesso.UI
 
         private void FrmControleAcesso_Load(object sender, EventArgs e)
         {
+
             int linha = 0;
             var registros = RegistroAcesso.ListarRegistros();
             foreach (var lista in registros)
@@ -58,19 +59,52 @@ namespace ControleAcesso.UI
 
         private void txtBuscarPorNome_Enter(object sender, EventArgs e)
         {
-           
+
         }
 
         private void txtBuscarPorNome_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             int linha = 0;
             var registrosNome = RegistroAcesso.ListarRegistroPorNomeDeUsuario(txtBuscarPorNome.Text);
+
+            dgvListaRegistro.Rows.Clear();
             foreach (var lista in registrosNome)
             {
                 dgvListaRegistro.Rows.Add();
                 dgvListaRegistro.Rows[linha].Cells[0].Value = lista.UsuarioId;
                 dgvListaRegistro.Rows[linha].Cells[1].Value = lista.DataHora;
                 dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao == 0 ? "Saída" : "Entrada";
+
+                linha++;
+            }
+
+        }
+
+        private void txtBuscarPorNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBuscarPorNome_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            int linha = 0;
+            var registros = RegistroAcesso.ListarRegistros();
+
+            dgvListaRegistro.Rows.Clear();
+
+            foreach (var lista in registros)
+            {
+                dgvListaRegistro.Rows.Add();
+                dgvListaRegistro.Rows[linha].Cells[0].Value = lista.UsuarioId;
+                dgvListaRegistro.Rows[linha].Cells[1].Value = lista.DataHora;
+                dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao == 0 ? "Saída" : "Entrada";
+
 
                 linha++;
             }

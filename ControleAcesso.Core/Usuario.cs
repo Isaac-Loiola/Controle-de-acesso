@@ -95,6 +95,5 @@ namespace ControleAcesso.Core
 
             return usuarios;
         }
-
     }
 }
