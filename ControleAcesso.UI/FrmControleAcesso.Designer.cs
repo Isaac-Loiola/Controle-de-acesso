@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmControleAcesso));
             dgvListaRegistro = new DataGridView();
             clnIdUsuario = new DataGridViewTextBoxColumn();
@@ -43,10 +43,13 @@
             clnDataOperacao = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
             panel3 = new Panel();
+            pictureBox1 = new PictureBox();
+            txtBuscarPorNome = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvListaUsuarios).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // dgvListaRegistro
@@ -59,24 +62,24 @@
             dgvListaRegistro.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgvListaRegistro.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             dgvListaRegistro.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvListaRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = SystemColors.Control;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
+            dgvListaRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             dgvListaRegistro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListaRegistro.Columns.AddRange(new DataGridViewColumn[] { clnIdUsuario, clnDataHora, clnTipoOperacao });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 10F);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            dgvListaRegistro.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle6.BackColor = SystemColors.Window;
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle6.ForeColor = Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
+            dgvListaRegistro.DefaultCellStyle = dataGridViewCellStyle6;
             dgvListaRegistro.Location = new Point(10, 13);
             dgvListaRegistro.MultiSelect = false;
             dgvListaRegistro.Name = "dgvListaRegistro";
@@ -118,24 +121,24 @@
             dgvListaUsuarios.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dgvListaUsuarios.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             dgvListaUsuarios.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = SystemColors.Control;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            dgvListaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle7.BackColor = SystemColors.Control;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle7.ForeColor = Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dgvListaUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             dgvListaUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListaUsuarios.Columns.AddRange(new DataGridViewColumn[] { clnNome, clnTipoUsuario, clnDataOperacao });
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle4.BackColor = SystemColors.Window;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 10F);
-            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-            dgvListaUsuarios.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle8.BackColor = SystemColors.Window;
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle8.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            dgvListaUsuarios.DefaultCellStyle = dataGridViewCellStyle8;
             dgvListaUsuarios.GridColor = Color.White;
             dgvListaUsuarios.Location = new Point(9, 13);
             dgvListaUsuarios.MultiSelect = false;
@@ -173,7 +176,7 @@
             panel2.BackColor = Color.Transparent;
             panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
             panel2.Controls.Add(dgvListaRegistro);
-            panel2.Location = new Point(45, 112);
+            panel2.Location = new Point(46, 112);
             panel2.Name = "panel2";
             panel2.Size = new Size(520, 441);
             panel2.TabIndex = 3;
@@ -183,16 +186,37 @@
             panel3.BackColor = Color.Transparent;
             panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
             panel3.Controls.Add(dgvListaUsuarios);
-            panel3.Location = new Point(606, 112);
+            panel3.Location = new Point(607, 112);
             panel3.Name = "panel3";
             panel3.Size = new Size(520, 441);
             panel3.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Location = new Point(448, 32);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(284, 50);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // txtBuscarPorNome
+            // 
+            txtBuscarPorNome.BackColor = Color.FromArgb(230, 230, 230);
+            txtBuscarPorNome.BorderStyle = BorderStyle.None;
+            txtBuscarPorNome.Location = new Point(458, 48);
+            txtBuscarPorNome.Name = "txtBuscarPorNome";
+            txtBuscarPorNome.PlaceholderText = "Buscar por nome";
+            txtBuscarPorNome.Size = new Size(262, 16);
+            txtBuscarPorNome.TabIndex = 7;
             // 
             // FrmControleAcesso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1167, 624);
+            Controls.Add(txtBuscarPorNome);
+            Controls.Add(pictureBox1);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Name = "FrmControleAcesso";
@@ -204,7 +228,9 @@
             ((System.ComponentModel.ISupportInitialize)dgvListaUsuarios).EndInit();
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -219,5 +245,7 @@
         private DataGridViewTextBoxColumn clnNome;
         private DataGridViewTextBoxColumn clnTipoUsuario;
         private DataGridViewTextBoxColumn clnDataOperacao;
+        private PictureBox pictureBox1;
+        private TextBox txtBuscarPorNome;
     }
 }

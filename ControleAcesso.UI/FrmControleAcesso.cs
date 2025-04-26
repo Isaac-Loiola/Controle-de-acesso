@@ -22,12 +22,12 @@ namespace ControleAcesso.UI
         {
             int linha = 0;
             var registros = RegistroAcesso.ListarRegistros();
-            foreach(var lista in registros)
+            foreach (var lista in registros)
             {
                 dgvListaRegistro.Rows.Add();
                 dgvListaRegistro.Rows[linha].Cells[0].Value = lista.UsuarioId;
                 dgvListaRegistro.Rows[linha].Cells[1].Value = lista.DataHora;
-                dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao==0?"Saída":"Entrada";
+                dgvListaRegistro.Rows[linha].Cells[2].Value = lista.TipoOperacao == 0 ? "Saída" : "Entrada";
 
 
                 linha++;
@@ -35,7 +35,7 @@ namespace ControleAcesso.UI
 
             linha = 0;
             var usuarios = Usuario.ListarUsuarios();
-            foreach(var lista in usuarios)
+            foreach (var lista in usuarios)
             {
                 dgvListaUsuarios.Rows.Add();
                 dgvListaUsuarios.Rows[linha].Cells[0].Value = lista.Nome;
@@ -49,6 +49,11 @@ namespace ControleAcesso.UI
         private void FrmControleAcesso_FormClosing(object sender, FormClosingEventArgs e)
         {
             RegistroAcesso.SaidaAcesso();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
