@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLoginUsuario));
             panel1 = new Panel();
+            chkMostrarSenha = new CheckBox();
             btnCadastrar = new Button();
             lblLoginSenha = new Label();
             label1 = new Label();
@@ -44,6 +45,7 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Controls.Add(chkMostrarSenha);
             panel1.Controls.Add(btnCadastrar);
             panel1.Controls.Add(lblLoginSenha);
             panel1.Controls.Add(label1);
@@ -53,6 +55,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(509, 402);
             panel1.TabIndex = 0;
+            // 
+            // chkMostrarSenha
+            // 
+            chkMostrarSenha.AutoSize = true;
+            chkMostrarSenha.Location = new Point(366, 286);
+            chkMostrarSenha.Name = "chkMostrarSenha";
+            chkMostrarSenha.Size = new Size(15, 14);
+            chkMostrarSenha.TabIndex = 3;
+            chkMostrarSenha.UseVisualStyleBackColor = true;
+            chkMostrarSenha.CheckedChanged += chkMostrarSenha_CheckedChanged;
             // 
             // btnCadastrar
             // 
@@ -105,6 +117,7 @@
             txtLoginSenha.Name = "txtLoginSenha";
             txtLoginSenha.Size = new Size(262, 16);
             txtLoginSenha.TabIndex = 0;
+            txtLoginSenha.UseSystemPasswordChar = true;
             txtLoginSenha.TextChanged += textBox1_TextChanged;
             // 
             // btnLogar
@@ -160,5 +173,6 @@
         private Button btnLogar;
         private Button btnCadastrar;
         private Label lblCadastroUsuario;
+        private CheckBox chkMostrarSenha;
     }
 }

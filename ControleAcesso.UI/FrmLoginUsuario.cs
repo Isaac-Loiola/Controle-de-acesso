@@ -71,5 +71,17 @@ namespace ControleAcesso.UI
         {
 
         }
+
+        private void chkMostrarSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkMostrarSenha.Checked)
+            {
+                txtLoginSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtLoginSenha.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
