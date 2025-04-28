@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroUsuario));
             pnlCadastroUsuario = new Panel();
+            button1 = new Button();
             chkExibirSenha = new CheckBox();
             lblSenha = new Label();
             lblTipoUsuario = new Label();
@@ -48,6 +49,7 @@
             // 
             pnlCadastroUsuario.BackColor = Color.Transparent;
             pnlCadastroUsuario.BackgroundImage = (Image)resources.GetObject("pnlCadastroUsuario.BackgroundImage");
+            pnlCadastroUsuario.Controls.Add(button1);
             pnlCadastroUsuario.Controls.Add(chkExibirSenha);
             pnlCadastroUsuario.Controls.Add(lblSenha);
             pnlCadastroUsuario.Controls.Add(lblTipoUsuario);
@@ -61,6 +63,19 @@
             pnlCadastroUsuario.Name = "pnlCadastroUsuario";
             pnlCadastroUsuario.Size = new Size(509, 402);
             pnlCadastroUsuario.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Berlin Sans FB", 11.25F);
+            button1.Location = new Point(337, 371);
+            button1.Name = "button1";
+            button1.Size = new Size(57, 25);
+            button1.TabIndex = 3;
+            button1.Text = "Login";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // chkExibirSenha
             // 
@@ -212,5 +227,6 @@
         private Label lblCpf;
         private Label lblNome;
         private CheckBox chkExibirSenha;
+        private Button button1;
     }
 }

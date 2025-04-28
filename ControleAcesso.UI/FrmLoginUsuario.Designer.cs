@@ -71,7 +71,7 @@
             btnCadastrar.FlatAppearance.BorderSize = 0;
             btnCadastrar.FlatStyle = FlatStyle.Flat;
             btnCadastrar.Font = new Font("Berlin Sans FB", 11.25F);
-            btnCadastrar.Location = new Point(298, 326);
+            btnCadastrar.Location = new Point(307, 319);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(87, 23);
             btnCadastrar.TabIndex = 4;

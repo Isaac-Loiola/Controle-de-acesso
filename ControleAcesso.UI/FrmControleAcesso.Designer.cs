@@ -46,6 +46,7 @@
             pictureBox1 = new PictureBox();
             txtBuscarPorNome = new TextBox();
             btnLimpar = new Button();
+            btnLogOff = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvListaUsuarios).BeginInit();
             panel2.SuspendLayout();
@@ -195,7 +196,7 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Location = new Point(448, 32);
+            pictureBox1.Location = new Point(44, 32);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(284, 50);
             pictureBox1.TabIndex = 6;
@@ -206,7 +207,7 @@
             txtBuscarPorNome.BackColor = Color.FromArgb(230, 230, 230);
             txtBuscarPorNome.BorderStyle = BorderStyle.None;
             txtBuscarPorNome.Font = new Font("Berlin Sans FB", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBuscarPorNome.Location = new Point(458, 48);
+            txtBuscarPorNome.Location = new Point(54, 49);
             txtBuscarPorNome.Name = "txtBuscarPorNome";
             txtBuscarPorNome.PlaceholderText = "Buscar por nome";
             txtBuscarPorNome.Size = new Size(262, 15);
@@ -231,11 +232,27 @@
             btnLimpar.UseVisualStyleBackColor = false;
             btnLimpar.Click += btnLimpar_Click;
             // 
+            // btnLogOff
+            // 
+            btnLogOff.BackColor = Color.Transparent;
+            btnLogOff.BackgroundImage = (Image)resources.GetObject("btnLogOff.BackgroundImage");
+            btnLogOff.FlatAppearance.BorderSize = 0;
+            btnLogOff.FlatStyle = FlatStyle.Flat;
+            btnLogOff.Font = new Font("Berlin Sans FB", 11.25F);
+            btnLogOff.Location = new Point(960, 32);
+            btnLogOff.Name = "btnLogOff";
+            btnLogOff.Size = new Size(165, 50);
+            btnLogOff.TabIndex = 9;
+            btnLogOff.Text = "Sair";
+            btnLogOff.UseVisualStyleBackColor = false;
+            btnLogOff.Click += btnLogOff_Click;
+            // 
             // FrmControleAcesso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1167, 624);
+            Controls.Add(btnLogOff);
             Controls.Add(btnLimpar);
             Controls.Add(txtBuscarPorNome);
             Controls.Add(pictureBox1);
@@ -271,5 +288,6 @@
         private PictureBox pictureBox1;
         private TextBox txtBuscarPorNome;
         private Button btnLimpar;
+        private Button btnLogOff;
     }
 }

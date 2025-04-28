@@ -12,7 +12,7 @@ namespace ControleAcesso.UI
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             // TODO Refinar validação!
-            if( txtCpf.Text != String.Empty && txtNome.Text != String.Empty && cmb.Text != String.Empty && txtSenha.Text != String.Empty)
+            if (txtCpf.Text != String.Empty && txtNome.Text != String.Empty && cmb.Text != String.Empty && txtSenha.Text != String.Empty)
             {
                 Usuario usuario = new(txtNome.Text, txtCpf.Text, cmb.SelectedIndex + 1, txtSenha.Text);
                 usuario.Cadastrar();
@@ -59,6 +59,13 @@ namespace ControleAcesso.UI
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmLoginUsuario frmLoginUsuario = new();
+            frmLoginUsuario.Show();
+            this.Close();
         }
     }
 }

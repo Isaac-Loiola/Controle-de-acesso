@@ -110,5 +110,13 @@ namespace ControleAcesso.UI
             }
             txtBuscarPorNome.Text = "";
         }
+
+        private void btnLogOff_Click(object sender, EventArgs e)
+        {
+            RegistroAcesso.SaidaAcesso();
+            FrmLoginUsuario frmLoginUsuario = new();
+            frmLoginUsuario.Show();
+            this.Close();
+        }
     }
 }
