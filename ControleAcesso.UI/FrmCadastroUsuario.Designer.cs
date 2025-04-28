@@ -187,9 +187,10 @@
             Controls.Add(btnCadastrar);
             Controls.Add(lblCadastroUsuario);
             Controls.Add(pnlCadastroUsuario);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmCadastroUsuario";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "ConnAccess";
             Load += CadastroUsuario_Load;
             pnlCadastroUsuario.ResumeLayout(false);
             pnlCadastroUsuario.PerformLayout();

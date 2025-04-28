@@ -241,9 +241,10 @@
             Controls.Add(pictureBox1);
             Controls.Add(panel3);
             Controls.Add(panel2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmControleAcesso";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ControleAcesso";
+            Text = "ConnAccess";
             FormClosing += FrmControleAcesso_FormClosing;
             Load += FrmControleAcesso_Load;
             ((System.ComponentModel.ISupportInitialize)dgvListaRegistro).EndInit();

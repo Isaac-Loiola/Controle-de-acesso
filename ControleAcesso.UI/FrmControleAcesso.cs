@@ -108,6 +108,7 @@ namespace ControleAcesso.UI
 
                 linha++;
             }
+            txtBuscarPorNome.Text = "";
         }
     }
 }

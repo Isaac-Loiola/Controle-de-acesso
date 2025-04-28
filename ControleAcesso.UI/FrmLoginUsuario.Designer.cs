@@ -153,9 +153,10 @@
             Controls.Add(lblCadastroUsuario);
             Controls.Add(btnLogar);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmLoginUsuario";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "LoginUsuario";
+            Text = "ConnAccess";
             Load += LoginUsuario_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

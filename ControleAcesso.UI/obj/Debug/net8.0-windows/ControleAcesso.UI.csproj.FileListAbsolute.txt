@@ -77,3 +77,4 @@ C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\n
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmControleAcesso.resources
 C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.FrmLoginUsuario.resources
 C:\Users\ratoj\source\repos\Controle-de-acesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.Properties.Resources.resources
+C:\Users\isaac.oloiola\source\repos\ControleAcesso\ControleAcesso.UI\obj\Debug\net8.0-windows\ControleAcesso.UI.Properties.Resources.resources
